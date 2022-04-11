@@ -1,0 +1,90 @@
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.container.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    border-bottom: 1px solid #ececec;
+    padding: 25px 0px;
+    background-color: $background-color;
+    height: 80px;
+}
+
+.nav__list, .header__list {
+    display: flex;
+}
+
+.nav__link {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.header__contacts:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav--choise,
+.nav--active {
+    padding: 32px 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $header-text-color;
+}
+
+.nav__line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: $background-color-blue;
+    border-radius: 2px;
+    bottom: -31px;
+}
+
+.nav--active {
+    color: $text-color;
+    border-radius: 2px;
+}
+
+.nav--choise:hover,
+.nav--choise:focus {
+    color: $text-color;
+}
+
+.header__link {
+    display: flex;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    &:hover,&focus{
+        color: $text-color;
+    }
+}
+
+.header__icon {
+    fill: $primary-text-color;
+    margin-right: 10px;
+    height: 16px;
+    width: 16px;
+    
+    .header__contacts:hover &,
+    .header__contacts:focus & {
+        fill: $text-color;
+    }
+}
+.header__icon {
+   
+}

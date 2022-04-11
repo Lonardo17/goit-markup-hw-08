@@ -1,0 +1,46 @@
+.customers {
+    padding: 94px 0;
+}
+
+.customers__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.customers__icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+}
+
+.customers__link:hover .customers__icon,
+.customers__link:focus .customers__icon {
+    fill: #2196f3;
+}
+
+.customers__link:hover,
+.customers__link:focus {
+    border: 1px solid #2196f3;
+}
+
+.customers__list {
+    display: flex;
+    justify-content: center;
+}
+
+.customers__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers__item:not(:last-child) {
+    margin-right: 30px;
+}
