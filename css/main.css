@@ -425,6 +425,12 @@ header {
   min-height: 400px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/fon@2x.jpg);
+  }
+}
+
 .hero__title {
   margin: 0 0 30px 0;
   font-weight: 900;
