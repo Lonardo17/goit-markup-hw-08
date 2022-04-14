@@ -18,14 +18,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+    @media screen and(min-width: $desktop) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .button__modal {
@@ -52,9 +56,13 @@
 .backdrop__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;   
     text-align: center;
     margin-bottom: 12px;
+    @media screen and(min-width: $desktop) {
+        font-size: 20px;
+        line-height: 1.15;
+    }
 }
 
 .backdrop__field {
@@ -72,11 +80,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     margin-top: 10px;
+    @media screen and(min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    
 }
 
 .backdrop__input {
@@ -93,7 +106,7 @@
 .backdrop__form {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }
 
 .button__position {

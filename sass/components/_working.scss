@@ -1,5 +1,8 @@
 .working {
     padding-bottom: 94px;
+    @media screen and(max-width: $desktop-max) {
+        display: none;
+    }
 }
 
 .working__title{
@@ -41,5 +44,6 @@
 
 .working__list {
     display: flex;
+    justify-content: center;
     margin: 0;
 }
