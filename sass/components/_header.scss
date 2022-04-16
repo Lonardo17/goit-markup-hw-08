@@ -182,7 +182,8 @@ header {
     text-decoration: none;
     letter-spacing: 0.02em;
     @media  screen and(max-width:$tablet-max) {
-    font-size: 24px;
+        font-weight: 500;
+        font-size: 24px;
     line-height: 1.16;
     margin-bottom: 64px;
         &--font{
