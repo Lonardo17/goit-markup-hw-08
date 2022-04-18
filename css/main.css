@@ -110,7 +110,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .nav__icon {
-    position: absolute;
     right: 0;
     padding: 0;
     border: 0;
